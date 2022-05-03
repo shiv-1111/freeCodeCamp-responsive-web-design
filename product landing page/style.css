@@ -1,0 +1,138 @@
+*{
+    border:0;
+  /*   padding:0; */
+  /*   font-family: ubuntu; */
+  }
+  
+  @media only screen and (max-width: 768px)
+  {
+    #header{
+      display: flex;
+      flex-direction: column;
+    }
+    iframe{
+      max-width:100%;
+      height:auto;
+    }
+  }
+  
+  #header{
+    display: flex;
+    justify-content: space-between;
+    /*   border:2px black solid; */
+    align-items: center;
+    padding: 0 2%;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color:white;
+    box-shadow: 0 2px 5px 1px #999;
+    border-radius:3px;
+    margin-bottom:1%;
+  }
+  
+  #header img{
+    width:50px;
+  }
+  
+  #header div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  nav{
+    display: flex;
+    gap:30px;
+  }
+  
+  .nav-link{
+    color:black;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  
+  form{
+    display: flex;
+      flex-direction: column;
+    gap:10px;
+    padding:20px 0;
+    align-items: center;
+    margin-bottom:2%;
+  }
+  
+  form button{
+    font-family: monospace;
+    font-size: large;
+    padding:10px;
+    border-radius:4px;
+    background-color: inherit;
+    box-shadow: 0 1px 3px 1px #999;
+  }
+  
+  #email-div, #email-div input{
+  /*   background-color: azure; */
+    text-align: center;
+    font-size: large;
+  }
+  
+  #email-div input{
+    width:300px;
+    border-radius:4px;
+  /*   background-color: azure; */
+    box-shadow: 0 1.5px 4px 1px #999;
+    padding:10px 20px;
+  }
+  
+  
+  #features h1{
+  /*   text-align:center; */
+    color: royalblue;
+    padding:10px 0;
+    margin:0 40px;
+    border-bottom: 0.1px ridge #999;
+  }
+  
+  #features{
+    font-family: sans-serif;
+    box-shadow: 0 1px 3px 1px #999;
+    padding:10px;
+    margin-bottom:3%;
+  }
+  
+  #features h2{
+    color:#555
+  }
+  
+  #video-div{
+    text-align:center;
+    margin-bottom:3%;
+  }
+  
+  iframe{
+    box-shadow: 0 3px 5px 3px #999;
+    border-radius:4px;
+  }
+  
+  #price-div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap:4%;
+    text-align:center;
+  }
+  
+  #price-div h2{
+    color: limegreen;
+    cursor: pointer;
+  }
+  
+  #price-div span{
+    color:red;
+  }
+  
+  #price-div div{
+    box-shadow: 0 1.5px 4px 1px #999;
+    padding:2%;
+    border-radius:4px;
+  }

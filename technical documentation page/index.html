@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Documentation Page</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav id="navbar">
         <header>HTML Documentation</header>
-        <ul>
+        <ul id="navlinks">
             <li><a href="#Introduction" class="nav-link">Introduction</a></li>
-            <li><a href="#Pre-requisites" class="nav-link">Pre-requisites</a></li>
-            <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+            <li><a href="#Prerequisites" class="nav-link">Prerequisites</a></li>
+            <li><a href="#Basic" class="nav-link">Basic</a></li>
             <li><a href="#Elements_and_Tags" class="nav-link">Elements and Tags</a></li>
             <li><a href="#Class_and_ID" class="nav-link">Class and ID</a></li>
             <li><a href="#Attributes" class="nav-link">Attributes</a></li>
@@ -23,45 +24,94 @@
     <main id="main-doc">
         <section id="Introduction" class="main-section">
             <header>Introduction</header>
-            <p></p>
-            <p></p>
-            <code></code>
+            <p>HTML is the standard markup language for creating Web pages.</p>
+            <ul>
+                <li>HTML stands for Hyper Text Markup Language</li>
+                <li>HTML is the standard markup language for creating Web pages</li>
+                <li>HTML describes the structure of a Web page</li>
+                <li>HTML consists of a series of elements</li>
+                <li>HTML elements tell the browser how to display the content</li>
+                <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a
+                    link", etc.
+                </li>
+            </ul>
+            <pre><code>&lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;title&gt;Page Title&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      
+      &lt;h1&gt;My First Heading&lt;/h1&gt;
+      &lt;p&gt;My first paragraph.&lt;/p&gt;
+      
+      &lt;/body&gt;
+      &lt;/html&gt;</code>
+      </pre>
         </section>
-        <section id="Pre-requisites" class="main-section">
-            <header>Pre-requisites</header>
-            <p></p>
+
+
+        <section id="Prerequisites" class="main-section">
+            <header>Prerequisites</header>
+            <p>Before starting this module, you don't need any previous HTML knowledge, but you should have at least
+                basic familiarity with using computers and using the web passively (i.e., just looking at it and
+                consuming content).</p>
         </section>
-        <section id="Hello_World" class="main-section">
-            <header>Hello World</header>
-            <p></p>
-            <code></code>
+
+
+        <section id="Basic" class="main-section">
+            <header>Basic</header>
+            <p>All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code>.<br>
+                The HTML document itself begins with <code>&lt;html&gt;</code> and ends with
+                <code>&lt;/html&gt;</code>.<br>
+                The visible part of the HTML document is between <code>&lt;body&gt;</code> and
+                <code>&lt;/body&gt;</code>.</p>
+            <p>The <code>&lt;!DOCTYPE&gt;</code> Declaration<br><br>
+                <code>&lt;!DOCTYPE html&gt;</code>
+            </p>
         </section>
+
+
         <section id="Elements_and_Tags" class="main-section">
-            <header>Elements and Tags<header>
-                    <p></p>
-                    <p>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    </p>
-                    <code></code>
+            <header>Elements and Tags</header>
+            <p>
+            <ul>HTML TAGS
+                <li>Tags are the starting and ending parts of an HTML element. They begin with &lt; symbol and end with
+                    > symbol. Whatever written inside &lt; and &gt; are called tags.</li>
+            </ul>
+            <ul>HTML Elements
+                <li>Elements enclose the contents in between the tags. They consist of some kind of structure or
+                    expression. It generally consists of a start tag, content and an end tag.</li>
+            </ul>
+            </p>
         </section>
+
+
         <section id="Class_and_ID" class="main-section">
             <header>Class and ID</header>
-            <p></p>
-            <p></p>
-            <code></code>
+            <p>The HTML <code>class</code> attribute is used to specify a class for an HTML element.<br>Multiple HTML
+                elements can share the same class.<br>The <code>class</code> attribute is often used to point to a class
+                name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the
+                specific class name.</p>
+            <p>The HTML <code>id</code> attribute is used to specify a unique id for an HTML element.<br>You cannot have
+                more than one element with the same id in an HTML document.</p>
+            <p>Example :-</p>
+            <code>
+      &lt;p class="para" id="para_1"&gt;This is 1st paragraph.&lt;/p&gt;</code>
+            <code>
+      &lt;p class="para" id="para_2"&gt;This is 2nd paragraph.&lt;/p&gt;</code><br>
         </section>
+
+
         <section id="Attributes" class="main-section">
             <header>Attributes</header>
-            <p></p>
-            <code></code>
-            <p></p>
+            <p> It is used to define the character of an HTML element. It always placed in the opening tag of an
+                element. It generally provides additional styling (attribute) to the element.</p>
+            <p>Example :-</p>
+            <code>
+      &lt;p align="center&gt;This is paragraph.&lt;/p&gt;</code>
         </section>
+
     </main>
 </body>
 

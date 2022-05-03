@@ -1,0 +1,103 @@
+:root {
+    --color-gray: #303841;
+    --color-blue: steelblue;
+    --color-red: #d02626;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: var(--color-blue);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.905);
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-shadow: 0.1rem 0.1rem black,
+        -0.1rem -0.1rem black,
+        0.1rem -0.1rem black, -0.1rem 0.1rem black;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: right;
+    gap: 2.5rem;
+    width: 100%;
+    background-color: var(--color-red);
+    padding: 1.3rem;
+    box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: auto auto; */
+}
+
+
+#welcome-section {
+    background: var(--color-gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #000;
+  background-image: linear-gradient(65deg, #232527 0%, #181719 100%);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.807);
+    text-shadow: 0.1rem 0.1rem black,
+    -0.1rem -0.1rem black,
+    0.1rem -0.1rem black, -0.1rem 0.1rem black;
+}
+
+h2{
+    font-size: 2.2rem;
+    /* font-weight: 600; */
+    color: rgba(255, 255, 255, 0.916);
+   }
+
+#welcome-section p {
+    color: var(--color-red);
+    font-style: italic;
+    
+}
+
+#contact, footer{
+    background-color: var(--color-gray);
+}
+
+#contact-footer {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
